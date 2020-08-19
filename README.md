@@ -14,12 +14,32 @@ Olle Logdahl, 19 August 2020
 
 ## Specs
 
+- 128 * 96 1-bit display
+- 
+
 ## Instruction set
+
+- CLS					0x00A1
+			Clears the screen
+- DISP				0x00A2
+			Updates screen (unused)
+- RET					0x00FF
+			Returns from a subroutine
+- AWT					0x0EAA
+			Halts cpu until any key is pressed
+- QUIT				0x0FEF
+			Quits the application
+
+- JMP					0x1nnn
+			Jumps to address 0x60 + nnn
+- CALL				0x2nnn
+			Calls subroutine at 0x60 + nnn
+- MOV Vx, kk	0x2xkk
+			Set value of register x to kk
+
 
 ---
 
-
-##### Try out some example games over [here](https://github.com/ollelogdahl/ConsoleGameEngine/tree/master/Examples)
 
 ## Notes
 - Color palette limited to 16 colors in a single session *(this is an internal limitation, see [MDSN](https://docs.microsoft.com/en-us/windows/console/console-screen-buffer-infoex))*
