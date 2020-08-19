@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/types.h
+stdbool.h
+-
+
+/home/olle/Documents/c/cosmos/main.c
+src/emulator/emulator.h
+/home/olle/Documents/c/cosmos/src/emulator/emulator.h
+src/disassembler/disassembler.h
+/home/olle/Documents/c/cosmos/src/disassembler/disassembler.h
+
+/home/olle/Documents/c/cosmos/src/disassembler/disassembler.h
+
+/home/olle/Documents/c/cosmos/src/emulator/emulator.h
+types.h
+/home/olle/Documents/c/cosmos/src/emulator/types.h
+SDL2/SDL.h
+-
+
